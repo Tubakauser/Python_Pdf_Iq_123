@@ -1,0 +1,414 @@
+
+                                                ***DAY-1:Introduction And Setup***
+
+
+#Examples:
+
+#1.WAP to print "hello world".
+#print("Hello World")
+
+
+#2.WAP to calculate sum of two number entered by the user.
+"""n1 = 10
+n2 = 20
+sum = n1 + n2
+print("Sum of", n1, "and", n2 , "is", sum)"""
+
+
+#3.WAP Convert temperature from Celsius to Fahrenheit.
+"""celsius = 47
+fahrenheit = (celsius * 1.8) + 32
+print('%.2f Celsius is equivalent to: %.2f Fahrenheit'
+	% (celsius, fahrenheit))"""
+
+
+#Practice Questions:
+
+#1.Write a Python program to calculate the area of a rectangle given its length and width.
+"""l = 5
+w = 6
+def areaRectangle(l, w):
+	return (l * w)
+print ("Area of Rectangle = ", areaRectangle(l, w))"""
+
+
+#2.Create a program that takes a user's name and age as input and prints a greeting message.
+"""name = "John"
+age = 30
+print("Name:", name)
+print("Age:", age)"""
+
+
+#3.Write a program to check if a number is even or odd.
+"""x = 24
+if x % 24 == 0:
+	print(x, "Is Even Number")
+else:
+	print(x, "Is Odd Number")"""
+
+
+#4.Given a list of numbers, find the maximum and minimum values.
+"""l1 = [1, 3, 4, 5, 2, 6]
+l2 = [3, 4, 8, 3, 10, 1]
+print ("The original list 1 is : " + str(l1))
+print ("The original list 2 is : " + str(l2))
+max_all = max(l1 + l2)
+min_all = min(l1 + l2)
+print ("The maximum of both lists is : " + str(max_all))
+print ("The minimum of both lists is : " + str(min_all))"""
+
+
+#5.Create a Python function to check if a given string is a palindrome.b
+"""def isPalindrome(s):
+	return s == s[::-1]
+s = "malayalam"
+ans = isPalindrome(s)
+if ans:
+	print("Its Palindrome")
+else:
+	print("Its Not Palindrome")"""
+
+
+#6.Calculate the compound interest for a given principal amount, interest rate, and time period.
+"""def compound_interest(principal, rate, time):
+	Amount = principal * (pow((1 + rate / 100), time))
+	CI = Amount - principal
+	print("Compound interest is:",CI)
+compound_interest(10000, 10.25, 5)"""
+
+
+#7.Write a program that converts a given number of days into years, weeks, and days.
+"""DAYS_IN_WEEK = 7
+def find( number_of_days ):
+	year = int(number_of_days / 365)
+	week = int((number_of_days % 365) /
+				DAYS_IN_WEEK)
+	days = (number_of_days % 365) % DAYS_IN_WEEK
+	print("years = ",year,
+		"\nweeks = ",week,
+		"\ndays = ",days)
+number_of_days = 200
+find(number_of_days)"""
+
+
+#8.Given a list of integers, find the sum of all positive numbers.
+"""class Sumofnumbers:
+	def negSum(self, list):
+		neg_sum = 0
+		for num in list:
+			num = int(num)
+			if(num < 0):
+				neg_sum = neg_sum + num
+		print("Sum of negative numbers is ", neg_sum)
+	def posSum(self, list):
+		pos_even_sum = 0
+		pos_odd_sum = 0
+		for num in list:
+			num = int(num)
+			if(num >= 0):
+				if(num % 2 == 0):
+					pos_even_sum = pos_even_sum + num
+				else:
+					pos_odd_sum = pos_odd_sum + num
+		print("Sum of even positive numbers is ",
+			pos_even_sum)
+		print("Sum of odd positive numbers is ",
+			pos_odd_sum)
+
+list_num = [-7, 5, 60, -34, 1]
+obj = Sumofnumbers()
+obj.negSum(list_num)
+obj.posSum(list_num)"""
+
+
+#9.Create a program that takes a sentence as input and counts the number of words in it.
+"""test_string = "Google is best Computer Science Portal"
+print ("The original string is : " + test_string)
+res = len(test_string.split())
+print ("The number of words in string are : " + str(res))"""
+
+
+#10.Implement a program that swaps the values of two variables.
+"""x = 10
+y = 50
+x, y = y, x
+print("Value of x:", x)
+print("Value of y:", y)"""
+
+                              #######################################################################
+
+
+                                                ***DAY-2:Variables And Data Types***
+
+
+#Examples:
+
+#1.Create variables for storing a person's name, age, and average test score
+"""Name = "John"
+Age = 40
+Test_avg = 9.8
+print("Name:",Name)
+print("Age:",Age)
+print("Test_avg:",Test_avg)"""
+
+
+#2: Concatenate two strings and print the result.
+"""var1 = "Hello "
+var2 = "World"
+var3 = var1 + var2
+print(var3)"""
+
+
+#3: Create a list of fruits and access elements using indexing.
+"""list1= ["apple", "banana", "cherry", "mango"]
+print(list1[3])
+print(list1[1])"""
+
+
+#Practice Questions:
+
+#1.Given a list of numbers, find the sum and average
+"""l1 = [4, 5, 1, 2, 9, 7, 10, 8]
+count = sum(l1)
+avg = count/len(l1)
+print("sum = ", count)
+print("average = ", avg)"""
+
+
+#2.Create a program that takes a temperature in Celsius and converts it to Kelvin
+"""cel = 10
+kelvin = cel + 273.15
+print('%0.1f degrees Celsius is equivalent to %0.1f Kelvin' %(cel, kelvin))"""
+
+
+#3.Implement a program that checks if a given string is a palindrome
+"""def isPalindrome(s):
+	return s == s[::-1]
+s = "malayalam"
+ans = isPalindrome(s)
+if ans:
+	print("Yes its palindrome")
+else:
+	print("its not palindrome")"""
+
+
+#4.Create a function to reverse a given string
+"""def reverse(string):
+	string = string[::-1]
+	return string
+s = "GoogleInternet"
+print("The original string is : ", end="")
+print(s)
+print("The reversed string(using extended slice) is : ", end="")
+print(reverse(s))"""
+
+
+#5.Given a list of names, concatenate them into a single string separated by spaces
+"""l = ['seema','tina','rahul','rocky','pooja']
+l = ' '.join(l)
+print(l)"""
+
+
+#6.Write a Python program to check if a given string is a pangram (contains all letters of the alphabet)
+"""import string
+def ispangram(str):
+	alphabet = "abcdefghijklmnopqrstuvwxyz"
+	for char in alphabet:
+		if char not in str.lower():
+			return False
+	return True
+string = 'the quick brown fox jumps over the lazy dog'
+if(ispangram(string) == True):
+	print("Yes its pangram")
+else:
+	print("its not pangram")"""
+
+
+#7.Calculate the area and circumference of a circle given its radius
+"""class circle:
+	def __init__(self,radius):
+		self.radius=radius
+	def getArea(self):
+		print(3.14*self.radius*self.radius)
+	def getcircumference(self):
+		print(self.radius*2*3.14)
+c=circle(10)
+c.getArea()
+c.getcircumference()"""
+
+
+#8.Implement a program that converts a given number of minutes into hours and minutes
+"""total_minutes = 130
+hours = total_minutes // 60
+minutes = total_minutes % 60
+time = "{}:{}".format(hours, minutes)
+print(time)"""
+
+
+#9.Create a function to count the number of vowels in a given string.
+"""def Check_Vow(string, vowels):
+	final = [each for each in string if each in vowels]
+	print(len(final))
+	print(final)
+string = "Geeks for Geeks"
+vowels = "AaEeIiOoUu"
+Check_Vow(string, vowels)"""
+
+
+#10.Write a program to check if a number is prime
+"""num = 11
+if num > 1:
+	for i in range(2, int(num/2)+1):
+		if (num % i) == 0:
+			print(num, "is not a prime number")
+			break
+	else:
+		print(num, "is a prime number")
+else:
+	print(num, "is not a prime number")"""
+
+
+                               #######################################################################
+
+
+                                               ***DAY-3:Control Flow And Loops***
+
+
+#Examples:
+
+#1.Write a program that checks if a given number is positive, negative, or zero
+"""def check(n):
+	if n > 0:
+		print("Positive")
+	elif n < 0:
+		print("Negative")
+	else:
+		print("zero")
+check(5)
+check(-5)
+check(0)"""
+
+
+#2. Create a loop that prints the first 10 even numbers
+"""for even_numbers in range(2,21,2):
+	print(even_numbers,end=' ')"""
+
+
+#3. Implement a program that finds the largest number in a list
+"""def myMax(list1):
+	max = list1[0]
+	for x in list1:
+		if x > max:
+			max = x
+	return max
+list1 = [10, 20, 4, 45, 99]
+print("Largest element is:", myMax(list1))"""
+
+
+#Practice Questions:
+
+#1.Create a program that takes a year as input and checks if it is a leap year or not
+"""def checkYear(year):
+	import calendar
+	return(calendar.isleap(year))
+year = 2000
+if (checkYear(year)):
+	print("Yes its Leap Year")
+else:
+	print("Not a Leap Year")"""
+
+
+#2.Given a list of integers, find all the even numbers and store them in a new list
+"""list1 = [10, 21, 4, 45, 66, 93]
+even_nos = [num for num in list1 if num % 2 == 0]
+print("Even numbers in the list: ", even_nos)"""
+
+
+#3.Write a Python program to check if a given number is a prime number
+"""num = 11
+if num > 1:
+	for i in range(2, int(num/2)+1):
+		if (num % i) == 0:
+			print(num, "is not a prime number")
+			break
+	else:
+		print(num, "is a prime number")
+else:
+	print(num, "is not a prime number")"""
+
+
+#4.Create a program that generates the Fibonacci sequence up to a given number of terms
+"""n = 10
+num1 = 0
+num2 = 1
+next_number = num2
+count = 1
+while count <= n:
+	print(next_number, end=" ")
+	count += 1
+	num1, num2 = num2, next_number
+	next_number = num1 + num2
+print()"""
+
+
+#5.Given a list of names, print all names starting with the letter 'A'
+"""test_list = ['Akash', 'Nikhil', 'Manjeet', 'Akshat','Apeksha']
+check = 'A'
+print("The original list : " + str(test_list))
+res = [idx for idx in test_list if idx[0].lower() == check.lower()]
+print("The names starting with letter A is : " + str(res))"""
+
+
+#6.Implement a program that prints the multiplication table of a given number
+"""n = 5
+def table(n, i=1):
+	if (i == 11): 
+		return
+	print(n, "*", i, "=", n * i)
+	i += 1 
+	table(n, i)
+table(n)"""
+
+
+#7.Write a program that calculates the factorial of a given number.
+"""num = 5
+def fact(n):
+	res = 1	
+	for i in range(2, n+1):
+		res *= i
+	return res
+print("Factorial of", num, "is",fact(num))"""
+
+
+#8.Create a loop that prints all prime numbers between 1 and 50 (o/p n aara)
+"""def isPrime(n):
+	if(n==1 or n==0):
+		return False
+	for i in range(2,n):
+		if(n%i==0):
+			return False
+			return True
+N = 50
+for i in range(1,N+1):
+	if(isPrime(i)):
+		print(i,end=" ")"""
+
+
+#9.Given a list of words, count the number of words with more than five characters
+"""s1 = "Geeksforgeeks is best Computer Science Portal"
+print ("The original string is : " + s1)
+res = len(s1.split())
+print ("The number of words in string are : " + str(res))"""
+
+
+#10.Calculate the sum of digits of a given number.
+"""n = 12345
+def getSum(n):
+	sum = 0
+	for digit in str(n):
+		sum += int(digit)
+	return sum
+print(getSum(n))"""
+
+                                              #########################################################
+
